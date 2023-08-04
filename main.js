@@ -7,7 +7,7 @@ import {Blockchain} from "./clases/BlockChain.js";
 import {Bloque}     from "./clases/Bloque.js";
 
 //---------------------------------------------------------------------------------------------------------
-//crea nodos por "ahi", que seran los conocidos del los nodos que se estan creando, para hacer el broadcasting 
+//crea nodos por "ahi", que seran los conocidos los nodos que se estan creando, para hacer el broadcasting 
 //ya que envia los bloques cerrados a los nodos conocidos, y estos lo agregan a su blockchain local
 //---------------------------------------------------------------------------------------------------------
 let nod1 = new Nodo();
@@ -23,7 +23,7 @@ let v_st    = "K4804lkn5";
 //creo transaccion y nodo
 let nod     = new Nodo();//primer nodo
 //---------------------------------------------------------------------------------------------------------
-//asigna nodos conocidos
+//Crea dos nodos que seran los conocidos
 nod.putNodosConocidos(nod1);
 nod.putNodosConocidos(nod2);           
 //---------------------------------------------------------------------------------------------------------
