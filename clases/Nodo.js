@@ -130,8 +130,8 @@ class Nodo {
         //---------------------------------------------------------------------------------------------------------
         let tipo= trans.getTipo();
         if (tipo == "TransaccionSimple")
-        {let out =  trans.getOUT();                    //de la forma TX-<VALOR>,que sea la direccion del nuevo dueño
-         let id   = trans.getID();                     //de la forma TX-<VALOR>, el valor fue generado por el dueño?
+        {let out =  trans.getOUT();                    //de la forma A-<VALOR>,que sea la direccion del nuevo dueño
+         let id   = trans.getID();                     //de la forma Tx-<VALOR>, el valor fue generado por el dueño?
          let hash = trans.getHash();                   //se vuelve a calcular y debe ser igual al guardado
          let IN   = trans.getIN();                     //si es el identificador de la ultima transaccion? 
          let nuevoHash=this.getBlockchain().CalcularHash(Estrategia, st); 
@@ -147,7 +147,7 @@ class Nodo {
         }
         else if (tipo == "CoinBase")
         {let out  = trans.getOUT();                   //de la forma A-<VALOR>,que sea la direccion del nuevo dueño
-        let id    = trans.getID();                    //de la forma tx-<VALOR>, el valor fue generado por el dueño?
+        let id    = trans.getID();                    //de la forma Tx-<VALOR>, el valor fue generado por el dueño?
         let hash  = trans.getHash();                  //se vuelve a calcular y debe ser igual al guardado
         let token = trans.getToken();                 //de la forma TKN-<VALOR>
         let nuevoHash=this.getBlockchain().CalcularHash(Estrategia, st); 

@@ -26,7 +26,7 @@ test("Test2: Agregar mas de 10 transacciones", () => {
     let v_st;     
     let trans;
     let v_OUT;
-    let bloq        = new Bloque();                            //primer Bloque
+    let bloq        = new Bloque();                                //primer Bloque
     let Blockch     = new Blockchain();
     let Estrategia = nod.ElegirEstrategiaHash(Blockch);            //Elige la estrategia
     let v_hash;
