@@ -1,7 +1,7 @@
 # PRACTICO_TyH
 
 Aspectos a considerar:
----------------------
+----------------------
 
 1) Hemos dejado el archivo comprimido en caso de que la instalación directa presente problemas. Esto se debe a que éste contiene una carpeta llamada "node_modules" que es bastante grande para cargar/descargar.
                  -Desconocemos si quede ejecutar sin problemas si ésta o se instala directamente.
