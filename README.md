@@ -3,7 +3,7 @@
 Aspectos a considerar:
 ----------------------
 
-   1) Ejecutando "node main" en la terminal se puede probar las clases desarrolladas.
+   1) main.js es un set de pruebas nuestro. Ejecutando "node main" en la terminal convoca a las clases desarrolladas. 
    2) Hemos dejado el archivo comprimido en caso de que la instalación directa presente problemas. Esto se debe a que éste contiene una carpeta llamada "node_modules" que es bastante grande para cargar/descargar.
                  ->Desconocemos si quede ejecutar sin problemas si ésta o se instala directamente.
    3) Para la ejecución del test:
